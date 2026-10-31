@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07080A" />
+  <title>Edukasi Trading | Metode H1, Analisis XAUUSD &amp; Manajemen Risiko</title>
+  <meta name="description" content="Pelajari dasar-dasar trading XAUUSD, analisis teknikal dan fundamental, Support &amp; Resistance, Supply &amp; Demand, Fibonacci, Money Management, dan Metode H1." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:title" content="Edukasi Trading | Metode H1, Analisis XAUUSD &amp; Manajemen Risiko" />
+  <meta property="og:description" content="Pelajari dasar-dasar trading XAUUSD, analisis teknikal dan fundamental, Support &amp; Resistance, Supply &amp; Demand, Fibonacci, Money Management, dan Metode H1." />
+  <meta property="og:url" content="https://t.me/ziogoldmaker" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23090A0B'/%3E%3Cpath d='M14 18H42L22 44H44' stroke='%23D4AF37' stroke-width='5' stroke-linecap='square' fill='none'/%3E%3Cpath d='M52 24C48 19 43 17 38 18' stroke='%23D4AF37' stroke-width='4' fill='none'/%3E%3C/svg%3E" />
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://i.ibb.co.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/zio.css?v=29" />
+</head>
+
+<body id="top">
+  <svg width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden;pointer-events:none" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="zg-gold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#8F7524" />
+        <stop offset="0.35" stop-color="#F6E08F" />
+        <stop offset="0.65" stop-color="#D4AF37" />
+        <stop offset="1" stop-color="#8F7524" />
+      </linearGradient>
+      <symbol id="zg-mark" viewBox="0 0 124 80">
+        <g transform="translate(6 0) skewX(-10)">
+          <polygon points="22,10 74,10 74,21 36,55 76,55 76,66 12,66 12,55 52,21 22,21" fill="url(#zg-gold)" />
+          <path d="M118 26C112 17 102 12 92 12C74 12 62 24 62 39C62 55 75 67 92 67C108 67 118 57 119 44H94" fill="none" stroke="url(#zg-gold)" stroke-width="10" stroke-linejoin="miter" />
+          <polygon points="94,55 119,44 112,64 96,70" fill="url(#zg-gold)" opacity="0.9" />
+        </g>
+      </symbol>
+      <filter id="hero-gold-tone" color-interpolation-filters="sRGB" x="-6%" y="-6%" width="112%" height="112%">
+        <feComponentTransfer result="toned">
+          <feFuncR type="table" tableValues="0.000 0.082 0.192 0.312 0.438 0.566 0.690 0.800 0.890" />
+          <feFuncG type="table" tableValues="0.000 0.079 0.182 0.292 0.408 0.526 0.642 0.748 0.838" />
+          <feFuncB type="table" tableValues="0.000 0.072 0.162 0.258 0.358 0.460 0.560 0.652 0.735" />
+        </feComponentTransfer>
+        <feColorMatrix in="toned" type="saturate" values="0.84" />
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="bg-stage" aria-hidden="true">
+    <div class="aurora"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+    <div class="sweep"></div>
+    <div class="vignette"></div>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="zio-container h-[68px] lg:h-[74px] flex items-center justify-between gap-3">
+
+      <a href="../" class="inline-flex items-center gap-2.5 py-1.5 shrink-0" aria-label="Beranda ZIOGOLD">
+        <img class="logo-img" src="../assets/zg-logo.webp" alt="" width="330" height="166" decoding="async" aria-hidden="true" />
+        <span class="wordmark gold-text text-sm sm:text-base">ZIOGOLD</span>
+      </a>
+
+      <nav aria-label="Navigasi utama" class="hidden lg:flex items-center gap-5 xl:gap-7 text-sm text-[color:var(--muted)]">
+        <a href="../" class="nav-link">Beranda</a>
+        <a href="../about/" class="nav-link">Tentang ZIOGOLD</a>
+        <a href="../education/" aria-current="true" class="nav-link">Edukasi Trading</a>
+        <a href="../merchandise/" class="nav-link">Merchandise</a>
+        <a href="../#akses-komunitas" class="nav-link">Akses Komunitas</a>
+        <a href="../contact/" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <span class="hidden lg:inline-flex">
+          <a href="https://t.me/ziogoldmaker" target="_blank" rel="noopener noreferrer"
+             data-cta-link="telegram" data-cta-location="navbar" class="btn btn-gold btn-sm">
+            Gabung Telegram Global
+          </a>
+        </span>
+
+        <button id="mobile-menu-btn" type="button"
+                class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-lg border border-[color:var(--border)] text-[color:var(--text)] hover:border-[color:var(--border-gold)] transition-colors"
+                aria-expanded="false" aria-controls="mobile-menu-panel" aria-label="Buka menu navigasi">
+          <svg id="menu-icon-open" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+          <svg id="menu-icon-close" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu-panel" class="hidden lg:hidden border-t border-[color:var(--border)] bg-[#090B09]">
+      <nav aria-label="Navigasi mobile" class="zio-container py-4 flex flex-col gap-1 text-base">
+        <a href="../" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Beranda</a>
+        <a href="../about/" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Tentang ZIOGOLD</a>
+        <a href="../education/" aria-current="true" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Edukasi Trading</a>
+        <a href="../merchandise/" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Merchandise</a>
+        <a href="../#akses-komunitas" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Akses Komunitas</a>
+        <a href="../#kolaborasi" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Kolaborasi</a>
+        <a href="../contact/" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Kontak</a>
+        <div class="pt-3 mt-2 border-t border-[color:var(--border)]">
+          <a href="https://t.me/ziogoldmaker" target="_blank" rel="noopener noreferrer"
+             data-cta-link="telegram" data-cta-location="navbar-mobile" class="mobile-nav-cta btn btn-gold w-full">
+            Gabung Telegram Global
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 15L15 5M7 5h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative pt-8 pb-12 sm:pt-14 sm:pb-16">
+      <div class="zio-container">
+        <div class="max-w-3xl">
+          <div class="mb-4 reveal is-visible">
+            <span class="hero-badge">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span>EDUKASI TRADING GRATIS · METODE H1 · XAUUSD</span>
+            </span>
+          </div>
+          <h1 class="h1 mb-4 reveal is-visible" style="--d:80ms">
+            Pahami Pasarnya, <span class="gold-text">Hargai Prosesnya.</span>
+          </h1>
+          <p class="text-base sm:text-lg text-[color:var(--muted)] leading-relaxed max-w-2xl reveal is-visible" style="--d:160ms">
+            Materi belajar terstruktur dari dasar-dasar XAUUSD, teknikal &amp; fundamental, pemetaan level kunci, Money Management, hingga pendekatan Metode H1 ZIOGOLD.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="zio-container"><div class="hairline" data-hairline></div></div>
+
+    <!-- KURIKULUM EDUKASI ZIOGOLD -->
+    <section id="materi-edukasi" class="py-16 sm:py-20">
+      <div class="zio-container">
+        <div class="max-w-2xl mb-7 sm:mb-9">
+          <p class="eyebrow mb-3 reveal">MATERI PEMBELAJARAN</p>
+          <h2 class="h2 reveal" style="--d:80ms">Enam Fondasi Belajar Trading XAUUSD.</h2>
+        </div>
+
+        <div class="flex flex-wrap gap-2 mb-7" role="toolbar" aria-label="Filter materi edukasi">
+          <button type="button" data-edu-filter="all" aria-pressed="true" class="pill-tab">Semua Materi</button>
+          <button type="button" data-edu-filter="dasar" aria-pressed="false" class="pill-tab">Dasar Trading</button>
+          <button type="button" data-edu-filter="analisis" aria-pressed="false" class="pill-tab">Teknikal &amp; Fundamental</button>
+          <button type="button" data-edu-filter="snr" aria-pressed="false" class="pill-tab">Support &amp; Resistance</button>
+          <button type="button" data-edu-filter="snd" aria-pressed="false" class="pill-tab">Supply &amp; Demand</button>
+          <button type="button" data-edu-filter="fibonacci" aria-pressed="false" class="pill-tab">Fibonacci</button>
+          <button type="button" data-edu-filter="mm" aria-pressed="false" class="pill-tab">Money Management</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+          <article data-edu-cat="dasar" class="panel spot px-4 py-5 sm:p-6 space-y-2.5" data-spot>
+            <span class="text-xs uppercase tracking-wider font-semibold text-[color:var(--gold)]">01 · Dasar Trading</span>
+            <h3 class="text-lg font-bold">Dasar-Dasar Pasar XAUUSD</h3>
+            <p class="text-sm text-[color:var(--muted)] leading-relaxed">
+              Mekanisme harga emas terhadap USD, pips, lot, spread, leverage, serta karakter sesi Asia, London, dan New York.
+            </p>
+          </article>
+
+          <article data-edu-cat="analisis" class="panel spot px-4 py-5 sm:p-6 space-y-2.5" data-spot>
+            <span class="text-xs uppercase tracking-wider font-semibold text-[color:var(--gold)]">02 · Analisis Pasar</span>
+            <h3 class="text-lg font-bold">Analisis Teknikal &amp; Fundamental</h3>
+            <p class="text-sm text-[color:var(--muted)] leading-relaxed">
+              Kombinasi pembacaan struktur candlestick dengan rilis data ekonomi makro penggerak sentimen emas global.
+            </p>
+          </article>
+
+          <article data-edu-cat="snr" class="panel spot px-4 py-5 sm:p-6 space-y-2.5" data-spot>
+            <span class="text-xs uppercase tracking-wider font-semibold text-[color:var(--gold)]">03 · Pemetaan Level</span>
+            <h3 class="text-lg font-bold">Support &amp; Resistance</h3>
+            <p class="text-sm text-[color:var(--muted)] leading-relaxed">
+              Identifikasi batas pantulan historis untuk mengenali area tertahannya tekanan beli maupun jual.
+            </p>
+          </article>
+
+          <article data-edu-cat="snd" class="panel spot px-4 py-5 sm:p-6 space-y-2.5" data-spot>
+            <span class="text-xs uppercase tracking-wider font-semibold text-[color:var(--gold)]">04 · Zona Reaksi</span>
+            <h3 class="text-lg font-bold">Supply &amp; Demand</h3>
+            <p class="text-sm text-[color:var(--muted)] leading-relaxed">
+              Pemetaan zona ketidakseimbangan penawaran dan permintaan sebagai acuan tunggu konfirmasi harga.
+            </p>
+          </article>
+
+          <article data-edu-cat="fibonacci" class="panel spot px-4 py-5 sm:p-6 space-y-2.5" data-spot>
+            <span class="text-xs uppercase tracking-wider font-semibold text-[color:var(--gold)]">05 · Proporsi Koreksi</span>
+            <h3 class="text-lg font-bold">Fibonacci Retracement</h3>
+            <p class="text-sm text-[color:var(--muted)] leading-relaxed">
+              Pengukuran kedalaman koreksi harga secara objektif untuk menyelaraskan area pantau searah tren.
+            </p>
+          </article>
+
+          <article data-edu-cat="mm" class="panel spot px-4 py-5 sm:p-6 space-y-2.5" data-spot>
+            <span class="text-xs uppercase tracking-wider font-semibold text-[color:var(--gold)]">06 · Pengelolaan Modal</span>
+            <h3 class="text-lg font-bold">Money Management</h3>
+            <p class="text-sm text-[color:var(--muted)] leading-relaxed">
+              Pengaturan ukuran lot, disiplin Stop Loss, dan penjagaan psikologi agar modal terlindung dari volatilitas ekstrem.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="zio-container"><div class="hairline" data-hairline></div></div>
+
+    <!-- METODE H1 ZIOGOLD -->
+    <section id="metode-h1" class="py-16 sm:py-20">
+      <div class="zio-container">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+          <div class="lg:col-span-6 space-y-4">
+            <p class="eyebrow reveal">PENDEKATAN ZIOGOLD</p>
+            <h2 class="h2 reveal" style="--d:80ms">Metode H1 · Wait and See.</h2>
+            <p class="text-sm sm:text-[15.5px] text-[color:var(--muted)] leading-relaxed reveal" style="--d:140ms">
+              Pendekatan analisis XAUUSD berbasis kerangka waktu 1 jam untuk membaca struktur harga secara tenang tanpa terburu-buru mengejar pasar.
+            </p>
+            <ul class="space-y-2.5 pt-1 text-sm text-[color:var(--text)] reveal" style="--d:180ms">
+              <li class="hero-recap-item"><strong>Struktur H1:</strong> Menyaring kebisingan timeframe kecil lewat penutupan candle H1.</li>
+              <li class="hero-recap-item"><strong>Area Penting:</strong> Menandai zona reaksi kunci sebelum harga mendekat.</li>
+              <li class="hero-recap-item"><strong>Wait and See:</strong> Menunggu konfirmasi valid di area pantau sebelum eksekusi.</li>
+              <li class="hero-recap-item"><strong>Risiko Terukur:</strong> Selalu menetapkan batas pembatalan skenario dan porsi lot bijak.</li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-6 reveal" style="--d:140ms">
+            <div class="panel spot px-4 py-6 sm:p-7" data-spot>
+              <div class="flex items-center justify-between gap-2 pb-4 mb-4 border-b border-[color:var(--border)] text-xs">
+                <span class="font-semibold text-[color:var(--gold-light)] uppercase tracking-wider">Ilustrasi Skenario Metode H1</span>
+                <span class="text-[color:var(--muted)]">Wait and See</span>
+              </div>
+              <svg viewBox="0 0 520 260" class="w-full h-auto rounded-lg bg-[#080A08] border border-[color:var(--border)]" role="img" aria-label="Ilustrasi skenario XAUUSD Metode H1 menampilkan target area, zona pantau Wait and See, dan batas pembatalan skenario">
+                <line x1="28" y1="52" x2="492" y2="52" stroke="rgba(240,213,122,0.45)" stroke-dasharray="5 5" />
+                <text x="34" y="42" fill="#F0D57A" font-size="11" font-family="Onest, sans-serif">Area Target Skenario XAUUSD</text>
+
+                <rect x="28" y="148" width="464" height="36" rx="4" fill="rgba(212,175,55,0.13)" stroke="rgba(212,175,55,0.38)" />
+                <text x="38" y="170" fill="#F5F4F0" font-size="11" font-family="Onest, sans-serif">Area Penting H1 · Wait and See (Tunggu Konfirmasi)</text>
+
+                <line x1="28" y1="216" x2="492" y2="216" stroke="rgba(255,120,120,0.55)" stroke-dasharray="4 4" />
+                <text x="34" y="234" fill="#A9ACA4" font-size="11" font-family="Onest, sans-serif">Batas Pembatalan Skenario &amp; Pengendalian Risiko</text>
+
+                <polyline points="42,190 98,136 142,158 205,96 264,164 308,154 368,92 436,56" fill="none" stroke="#D4AF37" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="264" cy="164" r="5" fill="#F0D57A" />
+                <circle cx="436" cy="56" r="5" fill="#F0D57A" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="zio-container"><div class="hairline" data-hairline></div></div>
+
+    <!-- KAMUS ISTILAH TRADING -->
+    <section id="kamus-trading" class="py-16 sm:py-20">
+      <div class="zio-container">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+          <div>
+            <p class="eyebrow mb-3 reveal">GLOSARIUM</p>
+            <h2 class="h2 reveal" style="--d:80ms">Istilah Penting XAUUSD.</h2>
+          </div>
+          <div class="w-full md:w-80">
+            <label for="glossary-search" class="sr-only">Cari istilah trading</label>
+            <input id="glossary-search" type="search" placeholder="Cari istilah (misal: lot, spread, H1)" class="zio-input" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div data-glossary-term="XAUUSD Emas Spot Gold" class="panel px-4 py-4 space-y-1">
+            <h3 class="text-base font-bold text-[color:var(--gold-light)]">XAUUSD</h3>
+            <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">Simbol perdagangan harga emas spot terhadap dolar AS.</p>
+          </div>
+          <div data-glossary-term="Metode H1 Timeframe Satu Jam" class="panel px-4 py-4 space-y-1">
+            <h3 class="text-base font-bold text-[color:var(--gold-light)]">Metode H1</h3>
+            <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">Pendekatan analisis struktur XAUUSD berbasis timeframe 1 jam khas ZIOGOLD.</p>
+          </div>
+          <div data-glossary-term="Wait and See Konfirmasi Sabar" class="panel px-4 py-4 space-y-1">
+            <h3 class="text-base font-bold text-[color:var(--gold-light)]">Wait and See</h3>
+            <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">Disiplin menunggu reaksi harga di area pantau sebelum mengambil posisi.</p>
+          </div>
+          <div data-glossary-term="Support Resistance Batas Harga" class="panel px-4 py-4 space-y-1">
+            <h3 class="text-base font-bold text-[color:var(--gold-light)]">Support &amp; Resistance</h3>
+            <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">Level bawah dan atas tempat harga historis tertahan atau memantul.</p>
+          </div>
+          <div data-glossary-term="Supply Demand Zona" class="panel px-4 py-4 space-y-1">
+            <h3 class="text-base font-bold text-[color:var(--gold-light)]">Supply &amp; Demand</h3>
+            <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">Zona awal dorongan jual atau beli kuat akibat ketidakseimbangan order.</p>
+          </div>
+          <div data-glossary-term="Fibonacci Retracement Rasio" class="panel px-4 py-4 space-y-1">
+            <h3 class="text-base font-bold text-[color:var(--gold-light)]">Fibonacci</h3>
+            <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">Alat ukur rasio koreksi untuk memetakan potensi area pantulan tren.</p>
+          </div>
+          <div data-glossary-term="Lot Volume Transaksi" class="panel px-4 py-4 space-y-1">
+            <h3 class="text-base font-bold text-[color:var(--gold-light)]">Lot</h3>
+            <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">Satuan volume transaksi penentu nilai untung/rugi per pips.</p>
+          </div>
+          <div data-glossary-term="Spread Selisih Bid Ask" class="panel px-4 py-4 space-y-1">
+            <h3 class="text-base font-bold text-[color:var(--gold-light)]">Spread</h3>
+            <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">Selisih harga jual (bid) dan beli (ask) saat membuka transaksi.</p>
+          </div>
+          <div data-glossary-term="Money Management Risiko Modal Stop Loss" class="panel px-4 py-4 space-y-1">
+            <h3 class="text-base font-bold text-[color:var(--gold-light)]">Money Management</h3>
+            <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">Pengaturan batas risiko dan porsi modal demi ketahanan akun.</p>
+          </div>
+        </div>
+        <p id="glossary-empty" class="hidden text-sm text-[color:var(--muted)] mt-6">Istilah tidak ditemukan. Silakan coba kata kunci lain.</p>
+      </div>
+    </section>
+
+    <section id="final-cta" class="py-12 sm:py-16">
+      <div class="zio-container">
+        <div class="glow-border spot px-4 py-8 sm:p-12 text-center reveal" data-spot>
+          <p class="eyebrow mb-3">BELAJAR BERSAMA KOMUNITAS</p>
+          <h2 class="h2 mb-3.5">Ikuti Materi &amp; Analisis Harian ZIOGOLD.</h2>
+          <p class="text-sm sm:text-base text-[color:var(--muted)] max-w-xl mx-auto mb-6 leading-relaxed">
+            Bergabung gratis di Telegram Global untuk mengikuti pemetaan XAUUSD dan pembelajaran Metode H1.
+          </p>
+          <a id="hero-cta" href="https://t.me/ziogoldmaker" target="_blank" rel="noopener noreferrer"
+             data-cta-link="telegram" data-cta-location="education-bottom-cta" class="btn btn-gold">
+            Gabung Telegram Global
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 15L15 5M7 5h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="relative border-t border-[color:var(--border)] pt-14 sm:pt-16 pb-20 md:pb-12 overflow-hidden">
+    <div class="zio-container relative">
+      <div class="footer-grid">
+
+        <div class="footer-col-brand">
+          <a href="../" class="inline-flex items-center gap-2.5 mb-4">
+            <img class="logo-img" src="../assets/zg-logo.webp" alt="" width="330" height="166" loading="lazy" decoding="async" aria-hidden="true" />
+            <span class="wordmark gold-text text-lg">ZIOGOLD</span>
+          </a>
+          <p class="text-sm sm:text-[15px] text-[color:var(--muted)] leading-relaxed">
+            Komunitas trading yang berfokus pada edukasi pasar emas, analisis XAUUSD, Metode H1, dan berbagai konten seputar perjalanan trading.
+          </p>
+        </div>
+
+        <div class="footer-col-links">
+          <p class="text-xs font-semibold uppercase tracking-wider mb-3.5 text-[color:var(--text)]">QUICK LINKS</p>
+          <ul class="space-y-2.5 text-sm text-[color:var(--muted)]">
+            <li><a href="../" class="hover:text-[color:var(--text)] transition-colors">Beranda</a></li>
+            <li><a href="../about/" class="hover:text-[color:var(--text)] transition-colors">Tentang ZIOGOLD</a></li>
+            <li><a href="../education/" class="hover:text-[color:var(--text)] transition-colors">Edukasi Trading</a></li>
+            <li><a href="../merchandise/" class="hover:text-[color:var(--text)] transition-colors">Merchandise</a></li>
+            <li><a href="../#akses-komunitas" class="hover:text-[color:var(--text)] transition-colors">Akses Komunitas</a></li>
+            <li><a href="../#kolaborasi" class="hover:text-[color:var(--text)] transition-colors">Kolaborasi</a></li>
+            <li><a href="../contact/" class="hover:text-[color:var(--text)] transition-colors">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-socials">
+          <p class="text-xs font-semibold uppercase tracking-wider mb-3.5 text-[color:var(--text)]">OFFICIAL SOCIALS</p>
+          <ul class="space-y-2.5 text-sm text-[color:var(--muted)]">
+            <li><a href="https://vt.tiktok.com/ZSHW8mbw73KdU-eOZhW/" target="_blank" rel="noopener noreferrer" data-cta-link="tiktok" data-cta-location="footer-tiktok" class="hover:text-[color:var(--gold-light)] transition-colors">TikTok ↗</a></li>
+            <li><a href="https://www.instagram.com/ziogold_/" target="_blank" rel="noopener noreferrer" data-cta-link="instagram" data-cta-location="footer-instagram" class="hover:text-[color:var(--gold-light)] transition-colors">Instagram ↗</a></li>
+            <li><a href="#kanal-resmi" data-cta-link="facebook" data-cta-location="footer-facebook" class="hover:text-[color:var(--gold-light)] transition-colors">Facebook ↗</a></li>
+            <li><a href="#kanal-resmi" data-cta-link="threads" data-cta-location="footer-threads" class="hover:text-[color:var(--gold-light)] transition-colors">Threads ↗</a></li>
+            <li><a href="https://t.me/ziogoldmaker" target="_blank" rel="noopener noreferrer" data-cta-link="telegram" data-cta-location="footer-telegram" class="hover:text-[color:var(--gold-light)] transition-colors">Telegram ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-stay">
+          <p class="text-xs font-semibold uppercase tracking-wider mb-3.5 text-[color:var(--text)]">STAY CONNECTED</p>
+          <p class="text-sm text-[color:var(--muted)] leading-relaxed mb-4">
+            Ikuti aktivitas, analisis pasar, dan konten terbaru ZIOGOLD melalui platform resmi kami.
+          </p>
+          <p class="text-xs font-bold tracking-[0.16em] uppercase text-[color:var(--gold-light)]">
+            *WAIT AND SEE.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom py-6 border-t border-[color:var(--border)] text-xs text-[color:var(--muted)] leading-relaxed">
+        <p class="shrink-0">© <span id="current-year">2026</span> ZIOGOLD. All Rights Reserved.</p>
+        <div class="flex flex-wrap items-center gap-x-4 lg:gap-x-6 gap-y-2">
+          <a href="../legal/#privasi" class="hover:text-[color:var(--text)] transition-colors">Kebijakan Privasi</a>
+          <a href="../legal/#ketentuan" class="hover:text-[color:var(--text)] transition-colors">Ketentuan Penggunaan</a>
+          <a href="../legal/#risiko" class="hover:text-[color:var(--text)] transition-colors">Pernyataan Risiko</a>
+          <a href="../legal/#merchandise" class="hover:text-[color:var(--text)] transition-colors">Ketentuan Merchandise</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a id="sticky-cta" href="https://t.me/ziogoldmaker" target="_blank" rel="noopener noreferrer"
+     data-cta-link="telegram" data-cta-location="sticky-mobile" class="sticky-cta btn btn-gold" tabindex="-1">
+    Gabung Telegram Global
+  </a>
+
+  <script src="../assets/zio-registry.js?v=29"></script>
+  <script src="../assets/zio.js?v=29"></script>
+</body>
+</html>

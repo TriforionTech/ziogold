@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07080A" />
+  <title>Tentang ZIOGOLD | Perjalanan, Metode H1 &amp; Komunitas</title>
+  <meta name="description" content="Kenali proses di balik ZIOGOLD sejak 2019 hingga membangun komunitas trader XAUUSD, live trading, dan kelas edukasi trading gratis." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:title" content="Tentang ZIOGOLD | Perjalanan, Metode H1 &amp; Komunitas" />
+  <meta property="og:description" content="Kenali proses di balik ZIOGOLD sejak 2019 hingga membangun komunitas trader XAUUSD, live trading, dan kelas edukasi trading gratis." />
+  <meta property="og:url" content="https://t.me/ziogoldmaker" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23090A0B'/%3E%3Cpath d='M14 18H42L22 44H44' stroke='%23D4AF37' stroke-width='5' stroke-linecap='square' fill='none'/%3E%3Cpath d='M52 24C48 19 43 17 38 18' stroke='%23D4AF37' stroke-width='4' fill='none'/%3E%3C/svg%3E" />
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://i.ibb.co.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/zio.css?v=29" />
+</head>
+
+<body id="top">
+  <svg width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden;pointer-events:none" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="zg-gold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#8F7524" />
+        <stop offset="0.35" stop-color="#F6E08F" />
+        <stop offset="0.65" stop-color="#D4AF37" />
+        <stop offset="1" stop-color="#8F7524" />
+      </linearGradient>
+      <symbol id="zg-mark" viewBox="0 0 124 80">
+        <g transform="translate(6 0) skewX(-10)">
+          <polygon points="22,10 74,10 74,21 36,55 76,55 76,66 12,66 12,55 52,21 22,21" fill="url(#zg-gold)" />
+          <path d="M118 26C112 17 102 12 92 12C74 12 62 24 62 39C62 55 75 67 92 67C108 67 118 57 119 44H94" fill="none" stroke="url(#zg-gold)" stroke-width="10" stroke-linejoin="miter" />
+          <polygon points="94,55 119,44 112,64 96,70" fill="url(#zg-gold)" opacity="0.9" />
+        </g>
+      </symbol>
+      <filter id="hero-gold-tone" color-interpolation-filters="sRGB" x="-6%" y="-6%" width="112%" height="112%">
+        <feComponentTransfer result="toned">
+          <feFuncR type="table" tableValues="0.000 0.082 0.192 0.312 0.438 0.566 0.690 0.800 0.890" />
+          <feFuncG type="table" tableValues="0.000 0.079 0.182 0.292 0.408 0.526 0.642 0.748 0.838" />
+          <feFuncB type="table" tableValues="0.000 0.072 0.162 0.258 0.358 0.460 0.560 0.652 0.735" />
+        </feComponentTransfer>
+        <feColorMatrix in="toned" type="saturate" values="0.84" />
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="bg-stage" aria-hidden="true">
+    <div class="aurora"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+    <div class="sweep"></div>
+    <div class="vignette"></div>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="zio-container h-[68px] lg:h-[74px] flex items-center justify-between gap-3">
+
+      <a href="../" class="inline-flex items-center gap-2.5 py-1.5 shrink-0" aria-label="Beranda ZIOGOLD">
+        <img class="logo-img" src="../assets/zg-logo.webp" alt="" width="330" height="166" decoding="async" aria-hidden="true" />
+        <span class="wordmark gold-text text-sm sm:text-base">ZIOGOLD</span>
+      </a>
+
+      <nav aria-label="Navigasi utama" class="hidden lg:flex items-center gap-5 xl:gap-7 text-sm text-[color:var(--muted)]">
+        <a href="../" class="nav-link">Beranda</a>
+        <a href="../about/" aria-current="true" class="nav-link">Tentang ZIOGOLD</a>
+        <a href="../education/" class="nav-link">Edukasi Trading</a>
+        <a href="../merchandise/" class="nav-link">Merchandise</a>
+        <a href="../#akses-komunitas" class="nav-link">Akses Komunitas</a>
+        <a href="../contact/" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <span class="hidden lg:inline-flex">
+          <a href="https://t.me/ziogoldmaker" target="_blank" rel="noopener noreferrer"
+             data-cta-link="telegram" data-cta-location="navbar" class="btn btn-gold btn-sm">
+            Gabung Telegram Global
+          </a>
+        </span>
+
+        <button id="mobile-menu-btn" type="button"
+                class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-lg border border-[color:var(--border)] text-[color:var(--text)] hover:border-[color:var(--border-gold)] transition-colors"
+                aria-expanded="false" aria-controls="mobile-menu-panel" aria-label="Buka menu navigasi">
+          <svg id="menu-icon-open" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+          <svg id="menu-icon-close" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu-panel" class="hidden lg:hidden border-t border-[color:var(--border)] bg-[#090B09]">
+      <nav aria-label="Navigasi mobile" class="zio-container py-4 flex flex-col gap-1 text-base">
+        <a href="../" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Beranda</a>
+        <a href="../about/" aria-current="true" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Tentang ZIOGOLD</a>
+        <a href="../education/" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Edukasi Trading</a>
+        <a href="../merchandise/" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Merchandise</a>
+        <a href="../#akses-komunitas" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Akses Komunitas</a>
+        <a href="../#kolaborasi" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Kolaborasi</a>
+        <a href="../contact/" class="mobile-nav-link py-2.5 px-2 rounded hover:bg-white/5">Kontak</a>
+        <div class="pt-3 mt-2 border-t border-[color:var(--border)]">
+          <a href="https://t.me/ziogoldmaker" target="_blank" rel="noopener noreferrer"
+             data-cta-link="telegram" data-cta-location="navbar-mobile" class="mobile-nav-cta btn btn-gold w-full">
+            Gabung Telegram Global
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 15L15 5M7 5h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative pt-8 pb-12 sm:pt-14 sm:pb-16">
+      <div class="zio-container">
+        <div class="max-w-3xl">
+          <div class="mb-4 reveal is-visible">
+            <span class="hero-badge">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span>ABOUT ZIOGOLD · SEJAK 2019</span>
+            </span>
+          </div>
+          <h1 class="h1 mb-4 reveal is-visible" style="--d:80ms">
+            Bukan Perjalanan yang Instan. <span class="gold-text">Ini Proses di Balik ZIOGOLD.</span>
+          </h1>
+          <p class="text-base sm:text-lg text-[color:var(--muted)] leading-relaxed max-w-2xl reveal is-visible" style="--d:160ms">
+            Dimulai pada 2019 di tengah kuliah dan berbagai tanggung jawab pekerjaan, ZIOGOLD berkembang dari proses belajar mandiri menjadi ruang analisis XAUUSD, live trading, dan edukasi gratis bagi ribuan trader.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="zio-container"><div class="hairline" data-hairline></div></div>
+
+    <!-- CREATOR PROFILE -->
+    <section id="profil-kreator" class="py-16 sm:py-20">
+      <div class="zio-container">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div class="lg:col-span-5">
+            <figure class="hero-stage">
+              <div class="hero-halo" aria-hidden="true"></div>
+              <div class="hero-arch" aria-hidden="true"></div>
+              <div class="hero-portrait-wrap">
+                <img
+                  src="https://i.ibb.co.com/tPwJV25L/ziogold-hero-img1-adjusted.png"
+                  alt="ZIOGOLD creator portrait"
+                  border="0"
+                  width="800"
+                  height="1000"
+                  loading="lazy"
+                  decoding="async"
+                  class="hero-portrait"
+                />
+              </div>
+            </figure>
+          </div>
+
+          <div class="lg:col-span-7 space-y-4">
+            <p class="eyebrow reveal">PROFIL ZIOGOLD</p>
+            <h2 class="h2 reveal" style="--d:80ms">Penggagas Metode H1 · Wait and See</h2>
+            <p class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-[color:var(--gold-light)] reveal" style="--d:110ms">
+              Trader | Market Analyst | Content Creator | Trading Community
+            </p>
+            <p class="text-sm sm:text-[16px] text-[color:var(--muted)] leading-relaxed reveal" style="--d:140ms">
+              Kebiasaan mengamati karakter harga XAUUSD secara disiplin sejak 2019 melahirkan pendekatan Metode H1. Kini proses pembacaan pasar tersebut dibagikan secara terbuka melalui live trading, kelas edukasi gratis, dan diskusi harian di Telegram Global maupun VIP.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2 reveal" style="--d:200ms">
+              <div class="panel px-4 py-4">
+                <p class="text-xs uppercase tracking-wider font-semibold text-[color:var(--gold)] mb-1">Fokus Pasar</p>
+                <p class="text-sm text-[color:var(--text)] font-medium">XAUUSD (Pasar Emas) &amp; Metode H1</p>
+              </div>
+              <div class="panel px-4 py-4">
+                <p class="text-xs uppercase tracking-wider font-semibold text-[color:var(--gold)] mb-1">Prinsip Utama</p>
+                <p class="text-sm text-[color:var(--text)] font-medium">Wait and See · Respect the Process</p>
+              </div>
+            </div>
+
+            <div class="pt-2 flex flex-wrap items-center gap-3 reveal" style="--d:240ms">
+              <a href="https://vt.tiktok.com/ZSHW8mbw73KdU-eOZhW/" target="_blank" rel="noopener noreferrer" data-cta-link="tiktok" data-cta-location="about-tiktok" class="btn btn-ghost btn-sm">TikTok ↗</a>
+              <a href="https://www.instagram.com/ziogold_/" target="_blank" rel="noopener noreferrer" data-cta-link="instagram" data-cta-location="about-instagram" class="btn btn-ghost btn-sm">Instagram ↗</a>
+              <a href="#kanal-resmi" data-cta-link="facebook" data-cta-location="about-facebook" class="btn btn-ghost btn-sm">Facebook ↗</a>
+              <a href="#kanal-resmi" data-cta-link="threads" data-cta-location="about-threads" class="btn btn-ghost btn-sm">Threads ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="zio-container"><div class="hairline" data-hairline></div></div>
+
+    <!-- FULL 9-PHASE TIMELINE -->
+    <section id="perjalanan" class="py-16 sm:py-20">
+      <div class="zio-container">
+        <div class="max-w-2xl mb-10">
+          <p class="eyebrow mb-3 reveal">PERJALANAN 2019 · 2026</p>
+          <h2 class="h2 reveal" style="--d:80ms">Sembilan Fase Proses dan Konsistensi.</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+          <!-- 01: 2019 -->
+          <article class="panel spot px-4 py-6 sm:p-7 flex flex-col justify-between reveal" data-spot>
+            <div class="space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[color:var(--border)]">
+                <span class="text-sm font-bold text-[color:var(--gold-light)] tabular-nums">2019</span>
+                <span class="text-[11px] uppercase tracking-wider font-semibold text-[color:var(--gold)]">The Beginning of Trading</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-[color:var(--text)]">Awal Mengenal Dunia Trading</h3>
+              <p class="text-xs sm:text-sm text-[color:var(--text)] font-medium leading-relaxed">
+                Mahasiswa S1 Hukum Universitas Pamulang (UNPAM) sekaligus bekerja di Caribou Coffee.
+              </p>
+              <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">
+                Mulai serius mempelajari dasar-dasar pasar keuangan, analisis teknikal, dan fundamental untuk memahami pergerakan harga.
+              </p>
+            </div>
+          </article>
+
+          <!-- 02: 2020 -->
+          <article class="panel spot px-4 py-6 sm:p-7 flex flex-col justify-between reveal" style="--d:50ms" data-spot>
+            <div class="space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[color:var(--border)]">
+                <span class="text-sm font-bold text-[color:var(--gold-light)] tabular-nums">2020</span>
+                <span class="text-[11px] uppercase tracking-wider font-semibold text-[color:var(--gold)]">From Learning to Practice</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-[color:var(--text)]">Mulai Menjalani Trading Harian</h3>
+              <p class="text-xs sm:text-sm text-[color:var(--text)] font-medium leading-relaxed">
+                Merintis bisnis apartemen di Sentra Timur sembari beralih dari teori ke praktik pasar.
+              </p>
+              <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">
+                Membiasakan diri membaca harga, mengamati kondisi pasar harian, dan melatih pengelolaan risiko dalam setiap keputusan.
+              </p>
+            </div>
+          </article>
+
+          <!-- 03: 2020 · 2022 -->
+          <article class="panel spot px-4 py-6 sm:p-7 flex flex-col justify-between reveal" style="--d:100ms" data-spot>
+            <div class="space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[color:var(--border)]">
+                <span class="text-sm font-bold text-[color:var(--gold-light)] tabular-nums">2020 · 2022</span>
+                <span class="text-[11px] uppercase tracking-wider font-semibold text-[color:var(--gold)]">Discipline &amp; Experience</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-[color:var(--text)]">Disiplin di Tengah Kesibukan</h3>
+              <p class="text-xs sm:text-sm text-[color:var(--text)] font-medium leading-relaxed">
+                Bergabung sebagai Sales Honda di Sanprima cabang Leuwiliang, Bogor.
+              </p>
+              <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">
+                Rutinitas kerja membentuk kedisiplinan waktu sembari tetap konsisten mengamati pasar dan mengevaluasi trading harian.
+              </p>
+            </div>
+          </article>
+
+          <!-- 04: 2022 -->
+          <article class="panel spot px-4 py-6 sm:p-7 flex flex-col justify-between reveal" data-spot>
+            <div class="space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[color:var(--border)]">
+                <span class="text-sm font-bold text-[color:var(--gold-light)] tabular-nums">2022</span>
+                <span class="text-[11px] uppercase tracking-wider font-semibold text-[color:var(--gold)]">A New Chapter</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-[color:var(--text)]">Konsistensi dalam Proses Trading</h3>
+              <p class="text-xs sm:text-sm text-[color:var(--text)] font-medium leading-relaxed">
+                Berkarier sebagai CMO di FIF cabang Bogor.
+              </p>
+              <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">
+                Menjaga rutinitas trading harian sekaligus memperdalam penyusunan analisis dan pemahaman karakter pergerakan harga.
+              </p>
+            </div>
+          </article>
+
+          <!-- 05: 2022 · 2023 -->
+          <article class="panel spot px-4 py-6 sm:p-7 flex flex-col justify-between reveal" style="--d:50ms" data-spot>
+            <div class="space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[color:var(--border)]">
+                <span class="text-sm font-bold text-[color:var(--gold-light)] tabular-nums">2022 · 2023</span>
+                <span class="text-[11px] uppercase tracking-wider font-semibold text-[color:var(--gold)]">Expanding Perspective</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-[color:var(--text)]">Memperluas Perspektif &amp; Risiko</h3>
+              <p class="text-xs sm:text-sm text-[color:var(--text)] font-medium leading-relaxed">
+                Melanjutkan karier sebagai CMO di Adira Finance cabang Bogor.
+              </p>
+              <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">
+                Fokus berkembang pada pemahaman alasan di balik setiap pergerakan pasar serta disiplin pengelolaan modal.
+              </p>
+            </div>
+          </article>
+
+          <!-- 06: 2023 -->
+          <article class="panel spot px-4 py-6 sm:p-7 flex flex-col justify-between reveal" style="--d:100ms" data-spot>
+            <div class="space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[color:var(--border)]">
+                <span class="text-sm font-bold text-[color:var(--gold-light)] tabular-nums">2023</span>
+                <span class="text-[11px] uppercase tracking-wider font-semibold text-[color:var(--gold)]">Staying in the Game</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-[color:var(--text)]">Bertahan di Berbagai Kondisi</h3>
+              <p class="text-xs sm:text-sm text-[color:var(--text)] font-medium leading-relaxed">
+                Menjalani aktivitas sebagai mitra pengemudi ShopeeFood.
+              </p>
+              <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">
+                Di tengah perubahan rutinitas, pengamatan XAUUSD dan pendalaman karakter pasar emas tetap berjalan tanpa putus.
+              </p>
+            </div>
+          </article>
+
+          <!-- 07: 2024 -->
+          <article class="panel spot px-4 py-6 sm:p-7 flex flex-col justify-between reveal" data-spot>
+            <div class="space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[color:var(--border)]">
+                <span class="text-sm font-bold text-[color:var(--gold-light)] tabular-nums">2024</span>
+                <span class="text-[11px] uppercase tracking-wider font-semibold text-[color:var(--gold)]">Going Live</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-[color:var(--text)]">Membagikan Proses Secara Terbuka</h3>
+              <p class="text-xs sm:text-sm text-[color:var(--text)] font-medium leading-relaxed">
+                Bergabung sebagai Sales POS Majoo sekaligus memulai sesi live trading.
+              </p>
+              <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">
+                Titik penting ketika analisis, skenario pasar, dan pengambilan keputusan ZIOGOLD mulai diperlihatkan langsung ke publik.
+              </p>
+            </div>
+          </article>
+
+          <!-- 08: 2024 · 2026 -->
+          <article class="panel spot px-4 py-6 sm:p-7 flex flex-col justify-between reveal" style="--d:50ms" data-spot>
+            <div class="space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[color:var(--border)]">
+                <span class="text-sm font-bold text-[color:var(--gold-light)] tabular-nums">2024 · 2026</span>
+                <span class="text-[11px] uppercase tracking-wider font-semibold text-[color:var(--gold)]">Trading, Teaching &amp; Building Community</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-[color:var(--text)]">Berbagi Ilmu, Bertumbuh Bersama</h3>
+              <p class="text-xs sm:text-sm text-[color:var(--text)] font-medium leading-relaxed">
+                Fokus penuh pada live trading, Metode H1 XAUUSD, dan kelas edukasi trading gratis.
+              </p>
+              <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">
+                Membangun ekosistem belajar dan diskusi bersama ribuan trader melalui Telegram serta berbagai kanal media sosial.
+              </p>
+            </div>
+          </article>
+
+          <!-- 09: 2026 -->
+          <article class="glow-border spot px-4 py-6 sm:p-7 flex flex-col justify-between reveal" style="--d:100ms" data-spot>
+            <div class="space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[color:var(--border)]">
+                <span class="text-sm font-bold text-[color:var(--gold-light)] tabular-nums">2026</span>
+                <span class="text-[11px] uppercase tracking-wider font-semibold text-[color:var(--gold-light)]">The Journey Continues</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-[color:var(--text)]">Bertumbuh Bersama Komunitas Trader</h3>
+              <p class="text-xs sm:text-sm text-[color:var(--muted)] leading-relaxed">
+                Terus mengembangkan live trading, edukasi gratis, analisis XAUUSD, dan komunitas trader dengan satu prinsip utama:
+              </p>
+            </div>
+            <p class="pt-4 mt-4 border-t border-[color:var(--border)] text-xs sm:text-sm font-bold text-[color:var(--gold-light)] leading-snug">
+              Wait and See. Understand the Market, Respect the Process.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="zio-container"><div class="hairline" data-hairline></div></div>
+
+    <!-- DOKUMENTASI & AKTIVITAS -->
+    <section id="dokumentasi" class="py-16 sm:py-20">
+      <div class="zio-container">
+        <div class="max-w-2xl mb-9">
+          <p class="eyebrow mb-3 reveal">DOKUMENTASI KOMUNITAS</p>
+          <h2 class="h2 reveal" style="--d:80ms">Live Trading, Edukasi, dan Diskusi.</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div class="ph rounded-xl min-h-[200px] reveal">
+            <span class="ph-tag">Live Trading · 2024 · 2026</span>
+            <p class="font-semibold text-[color:var(--text)]">Sesi Analisis Secara Terbuka</p>
+            <p class="text-xs max-w-xs">Pemetaan area XAUUSD dan evaluasi skenario langsung.</p>
+          </div>
+          <div class="ph rounded-xl min-h-[200px] reveal" style="--d:70ms">
+            <span class="ph-tag">Edukasi Gratis · ZIOGOLD</span>
+            <p class="font-semibold text-[color:var(--text)]">Kelas Metode H1 &amp; Dasar Trading</p>
+            <p class="text-xs max-w-xs">Ruang belajar struktur pasar dan manajemen risiko.</p>
+          </div>
+          <div class="ph rounded-xl min-h-[200px] reveal" style="--d:140ms">
+            <span class="ph-tag">Komunitas · Global &amp; VIP</span>
+            <p class="font-semibold text-[color:var(--text)]">Diskusi Ribuan Anggota</p>
+            <p class="text-xs max-w-xs">Pertukaran wawasan untuk menjaga disiplin trading.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="final-cta" class="py-12 sm:py-16">
+      <div class="zio-container">
+        <div class="glow-border spot px-4 py-8 sm:p-12 text-center reveal" data-spot>
+          <p class="eyebrow mb-3">BERGABUNG BERSAMA ZIOGOLD</p>
+          <h2 class="h2 mb-3.5">Perjalanan Trading Anda Bisa Dimulai dari Sini.</h2>
+          <p class="text-sm sm:text-base text-[color:var(--muted)] max-w-xl mx-auto mb-6 leading-relaxed">
+            Bergabung gratis melalui Telegram Global untuk belajar dan memahami pasar bersama komunitas.
+          </p>
+          <a id="hero-cta" href="https://t.me/ziogoldmaker" target="_blank" rel="noopener noreferrer"
+             data-cta-link="telegram" data-cta-location="about-bottom-cta" class="btn btn-gold">
+            Gabung Telegram Global
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 15L15 5M7 5h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="relative border-t border-[color:var(--border)] pt-14 sm:pt-16 pb-20 md:pb-12 overflow-hidden">
+    <div class="zio-container relative">
+      <div class="footer-grid">
+
+        <div class="footer-col-brand">
+          <a href="../" class="inline-flex items-center gap-2.5 mb-4">
+            <img class="logo-img" src="../assets/zg-logo.webp" alt="" width="330" height="166" loading="lazy" decoding="async" aria-hidden="true" />
+            <span class="wordmark gold-text text-lg">ZIOGOLD</span>
+          </a>
+          <p class="text-sm sm:text-[15px] text-[color:var(--muted)] leading-relaxed">
+            Komunitas trading yang berfokus pada edukasi pasar emas, analisis XAUUSD, Metode H1, dan berbagai konten seputar perjalanan trading.
+          </p>
+        </div>
+
+        <div class="footer-col-links">
+          <p class="text-xs font-semibold uppercase tracking-wider mb-3.5 text-[color:var(--text)]">QUICK LINKS</p>
+          <ul class="space-y-2.5 text-sm text-[color:var(--muted)]">
+            <li><a href="../" class="hover:text-[color:var(--text)] transition-colors">Beranda</a></li>
+            <li><a href="../about/" class="hover:text-[color:var(--text)] transition-colors">Tentang ZIOGOLD</a></li>
+            <li><a href="../education/" class="hover:text-[color:var(--text)] transition-colors">Edukasi Trading</a></li>
+            <li><a href="../merchandise/" class="hover:text-[color:var(--text)] transition-colors">Merchandise</a></li>
+            <li><a href="../#akses-komunitas" class="hover:text-[color:var(--text)] transition-colors">Akses Komunitas</a></li>
+            <li><a href="../#kolaborasi" class="hover:text-[color:var(--text)] transition-colors">Kolaborasi</a></li>
+            <li><a href="../contact/" class="hover:text-[color:var(--text)] transition-colors">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-socials">
+          <p class="text-xs font-semibold uppercase tracking-wider mb-3.5 text-[color:var(--text)]">OFFICIAL SOCIALS</p>
+          <ul class="space-y-2.5 text-sm text-[color:var(--muted)]">
+            <li><a href="https://vt.tiktok.com/ZSHW8mbw73KdU-eOZhW/" target="_blank" rel="noopener noreferrer" data-cta-link="tiktok" data-cta-location="footer-tiktok" class="hover:text-[color:var(--gold-light)] transition-colors">TikTok ↗</a></li>
+            <li><a href="https://www.instagram.com/ziogold_/" target="_blank" rel="noopener noreferrer" data-cta-link="instagram" data-cta-location="footer-instagram" class="hover:text-[color:var(--gold-light)] transition-colors">Instagram ↗</a></li>
+            <li><a href="#kanal-resmi" data-cta-link="facebook" data-cta-location="footer-facebook" class="hover:text-[color:var(--gold-light)] transition-colors">Facebook ↗</a></li>
+            <li><a href="#kanal-resmi" data-cta-link="threads" data-cta-location="footer-threads" class="hover:text-[color:var(--gold-light)] transition-colors">Threads ↗</a></li>
+            <li><a href="https://t.me/ziogoldmaker" target="_blank" rel="noopener noreferrer" data-cta-link="telegram" data-cta-location="footer-telegram" class="hover:text-[color:var(--gold-light)] transition-colors">Telegram ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-stay">
+          <p class="text-xs font-semibold uppercase tracking-wider mb-3.5 text-[color:var(--text)]">STAY CONNECTED</p>
+          <p class="text-sm text-[color:var(--muted)] leading-relaxed mb-4">
+            Ikuti aktivitas, analisis pasar, dan konten terbaru ZIOGOLD melalui platform resmi kami.
+          </p>
+          <p class="text-xs font-bold tracking-[0.16em] uppercase text-[color:var(--gold-light)]">
+            *WAIT AND SEE.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom py-6 border-t border-[color:var(--border)] text-xs text-[color:var(--muted)] leading-relaxed">
+        <p class="shrink-0">© <span id="current-year">2026</span> ZIOGOLD. All Rights Reserved.</p>
+        <div class="flex flex-wrap items-center gap-x-4 lg:gap-x-6 gap-y-2">
+          <a href="../legal/#privasi" class="hover:text-[color:var(--text)] transition-colors">Kebijakan Privasi</a>
+          <a href="../legal/#ketentuan" class="hover:text-[color:var(--text)] transition-colors">Ketentuan Penggunaan</a>
+          <a href="../legal/#risiko" class="hover:text-[color:var(--text)] transition-colors">Pernyataan Risiko</a>
+          <a href="../legal/#merchandise" class="hover:text-[color:var(--text)] transition-colors">Ketentuan Merchandise</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a id="sticky-cta" href="https://t.me/ziogoldmaker" target="_blank" rel="noopener noreferrer"
+     data-cta-link="telegram" data-cta-location="sticky-mobile" class="sticky-cta btn btn-gold" tabindex="-1">
+    Gabung Telegram Global
+  </a>
+
+  <script src="../assets/zio-registry.js?v=29"></script>
+  <script src="../assets/zio.js?v=29"></script>
+</body>
+</html>
