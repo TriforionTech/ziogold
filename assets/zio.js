@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entries[i].target.classList.toggle('anim-paused', !entries[i].isIntersecting);
       }
     }, { rootMargin: '160px 0px' });
-    document.querySelectorAll('.glow-border, .ph, .hero-halo, .btn-gold, .gold-text:not(.hw)').forEach((el) => animIo.observe(el));
+    document.querySelectorAll('.glow-border, .ph, .hero-halo, .btn-gold, .gold-text:not(.hw), .hero-typo').forEach((el) => animIo.observe(el));
 
     const bgAnimated = document.querySelectorAll('.aurora span, .sweep');
     document.addEventListener('visibilitychange', () => {
@@ -539,3 +539,40 @@ document.addEventListener('DOMContentLoaded', () => {
     setActive(0);
   });
 });
+
+/* 14. Hero spotlight: glow mengikuti kursor (desktop pointer halus saja).
+   rAF + lerp, transform-only, berhenti total saat kursor keluar hero. */
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!window.matchMedia('(pointer: fine)').matches) return;
+  var hero = document.querySelector('.hero-typo');
+  if (!hero) return;
+  var spot = hero.querySelector('.hero-spot');
+  if (!spot) return;
+  var tx = 0, ty = 0, cx = 0, cy = 0, raf = null, inside = false;
+  function tick() {
+    cx += (tx - cx) * 0.12;
+    cy += (ty - cy) * 0.12;
+    spot.style.transform = 'translate3d(' + cx.toFixed(1) + 'px,' + cy.toFixed(1) + 'px,0)';
+    if (inside || Math.abs(tx - cx) > 0.4 || Math.abs(ty - cy) > 0.4) {
+      raf = requestAnimationFrame(tick);
+    } else {
+      raf = null;
+    }
+  }
+  hero.addEventListener('pointermove', function (e) {
+    var r = hero.getBoundingClientRect();
+    tx = e.clientX - r.left;
+    ty = e.clientY - r.top;
+    if (!inside) {
+      inside = true;
+      hero.classList.add('spot-on');
+      cx = tx; cy = ty;
+    }
+    if (!raf) raf = requestAnimationFrame(tick);
+  }, { passive: true });
+  hero.addEventListener('pointerleave', function () {
+    inside = false;
+    hero.classList.remove('spot-on');
+  }, { passive: true });
+})();
