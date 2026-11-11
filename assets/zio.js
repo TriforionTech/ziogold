@@ -24,6 +24,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('current-year');
   if (yearEl) yearEl.textContent = (REG.brand && REG.brand.copyrightYear) || '2026';
 
+  const marketInfo = document.querySelector('.hero-market-info');
+  if (marketInfo) {
+    let marketInfoTimer = 0;
+    const showMarketInfo = () => {
+      marketInfo.classList.add('is-open');
+      marketInfo.setAttribute('aria-expanded', 'true');
+      clearTimeout(marketInfoTimer);
+      marketInfoTimer = setTimeout(() => {
+        marketInfo.classList.remove('is-open');
+        marketInfo.setAttribute('aria-expanded', 'false');
+      }, 2800);
+    };
+    marketInfo.addEventListener('pointerenter', showMarketInfo, { passive: true });
+    marketInfo.addEventListener('focus', showMarketInfo);
+    marketInfo.addEventListener('click', showMarketInfo);
+    marketInfo.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        clearTimeout(marketInfoTimer);
+        marketInfo.classList.remove('is-open');
+        marketInfo.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
   /* 2. Notifikasi sopan untuk kanal opsional yang URL-nya sedang dikonfirmasi di ZIO_REGISTRY */
   let noticeTimer = 0;
   function showPendingChannelNotice(channelLabel) {
