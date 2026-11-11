@@ -901,6 +901,115 @@
       text-underline-offset: 4px;
     }
     .about-footer a:hover { color: var(--text); }
+    .social-channels {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      column-gap: 40px;
+    }
+    .social-channel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 12px 20px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .social-channel > div:first-child {
+      min-width: 0;
+    }
+    .social-channel .mb-3 {
+      margin-bottom: 0;
+    }
+    .social-channel .social-title-icon {
+      color: var(--gold-light);
+    }
+    .social-channel-description {
+      margin: 6px 0 0 30px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .social-channel-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--gold-light);
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: color 180ms ease;
+    }
+    .social-channel-link svg {
+      width: 14px;
+      height: 14px;
+      flex: 0 0 auto;
+    }
+    .social-channel-link:hover {
+      color: var(--text);
+    }
+    .social-telegram {
+      grid-column: 1 / -1;
+      display: grid;
+      justify-items: center;
+      margin-top: 24px;
+      padding-block: 28px;
+      border-top: 1px solid var(--border-gold);
+      text-align: center;
+    }
+    .social-telegram-content {
+      display: grid;
+      justify-items: center;
+      gap: 14px;
+    }
+    .social-telegram-content > div {
+      display: grid;
+      justify-items: center;
+      gap: 12px;
+    }
+    .social-telegram .live-dot {
+      flex: 0 0 auto;
+    }
+    .social-telegram-heading {
+      display: grid;
+      justify-items: center;
+      gap: 8px;
+    }
+    .social-telegram-heading .social-title-icon svg {
+      width: 26px;
+      height: 26px;
+    }
+    .social-telegram-description {
+      max-width: 62ch;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .social-telegram-link {
+      color: var(--gold-light);
+      font-weight: 600;
+      transition: color 180ms ease;
+    }
+    .social-telegram-link:hover {
+      color: var(--text);
+    }
+    @media (min-width: 640px) {
+      .social-channels {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 520px) {
+      .social-channel {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 10px;
+        padding: 16px 0;
+      }
+      .social-channel-link {
+        margin-left: 30px;
+      }
+      .social-telegram {
+        justify-items: center;
+      }
+    }
     .about-timeline {
       position: relative;
       display: grid;
