@@ -143,6 +143,40 @@
     <section id="hero" class="hero-typo relative pt-10 sm:pt-16 pb-14 sm:pb-20">
 
 
+      <svg class="hero-market-backdrop" viewBox="0 0 1440 620" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="hero-geometry-line" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#D4AF37" stop-opacity="0" />
+            <stop offset=".42" stop-color="#D4AF37" stop-opacity=".3" />
+            <stop offset="1" stop-color="#F0D57A" stop-opacity=".74" />
+          </linearGradient>
+        </defs>
+        <g class="hero-geometry-base">
+          <path d="M-50 112L100 35 238 128 374 54 516 154 657 63 802 146 951 44 1092 131 1240 40 1394 128 1500 58" />
+          <path d="M-44 285L100 205 238 295 374 218 516 318 657 226 802 310 951 210 1092 294 1240 205 1394 290 1500 220" />
+          <path d="M-50 460L100 375 238 466 374 384 516 488 657 394 802 478 951 378 1092 462 1240 375 1394 458 1500 390" />
+          <path d="M100 35L100 205 100 375 100 545M238 128L238 295 238 466 238 620M374 54L374 218 374 384 374 550M516 154L516 318 516 488 516 620M657 63L657 226 657 394 657 565M802 146L802 310 802 478 802 620M951 44L951 210 951 378 951 550M1092 131L1092 294 1092 462 1092 620M1240 40L1240 205 1240 375 1240 548M1394 128L1394 290 1394 458 1394 620" />
+          <path d="M-44 285L100 35 238 295 374 54 516 318 657 63 802 310 951 44 1092 294 1240 40 1394 290 1500 58" />
+          <path d="M-50 460L100 205 238 466 374 218 516 488 657 226 802 478 951 210 1092 462 1240 205 1394 458 1500 220" />
+          <path d="M-40 112L100 375 238 128 374 384 516 154 657 394 802 146 951 378 1092 131 1240 375 1394 128 1500 390" />
+          <path d="M-45 285L100 545 238 295 374 550 516 318 657 565 802 310 951 550 1092 294 1240 548 1394 290 1500 555" />
+        </g>
+        <g class="hero-geometry-flow">
+          <path d="M-50 112L100 35 238 128 374 54 516 154 657 63 802 146 951 44 1092 131 1240 40 1394 128 1500 58" />
+          <path d="M-44 285L100 205 238 295 374 218 516 318 657 226 802 310 951 210 1092 294 1240 205 1394 290 1500 220" />
+          <path d="M-50 460L100 375 238 466 374 384 516 488 657 394 802 478 951 378 1092 462 1240 375 1394 458 1500 390" />
+          <path d="M-44 285L100 35 238 295 374 54 516 318 657 63 802 310 951 44 1092 294 1240 40 1394 290 1500 58" />
+          <path d="M-50 460L100 205 238 466 374 218 516 488 657 226 802 478 951 210 1092 462 1240 205 1394 458 1500 220" />
+          <path d="M-40 112L100 375 238 128 374 384 516 154 657 394 802 146 951 378 1092 131 1240 375 1394 128 1500 390" />
+        </g>
+        <g class="hero-geometry-nodes">
+          <circle cx="238" cy="128" r="2.5" /><circle cx="516" cy="154" r="2.5" />
+          <circle cx="802" cy="146" r="2.5" /><circle cx="1092" cy="131" r="2.5" />
+          <circle cx="1394" cy="128" r="2.5" /><circle cx="100" cy="375" r="2.5" />
+          <circle cx="374" cy="384" r="2.5" /><circle cx="657" cy="394" r="2.5" />
+          <circle cx="951" cy="378" r="2.5" /><circle cx="1240" cy="375" r="2.5" />
+        </g>
+      </svg>
       <div class="hero-spot" aria-hidden="true"></div>
 
       <div class="hero-stars" aria-hidden="true">
@@ -228,9 +262,18 @@
               <div class="hero-market-title-group">
                 <span class="hero-market-kicker">MARKET WATCH</span>
               </div>
-              <a class="hero-market-link" href="https://www.tradingview.com/chart/?symbol=OANDA%3AXAUUSD" target="_blank" rel="noopener noreferrer" aria-label="Buka chart XAUUSD penuh di TradingView">
-                Chart penuh <span aria-hidden="true">↗</span>
-              </a>
+              <div class="hero-market-actions">
+                <a class="hero-market-link" href="https://www.tradingview.com/chart/?symbol=OANDA%3AXAUUSD" target="_blank" rel="noopener noreferrer" aria-label="Buka chart XAUUSD penuh di TradingView">
+                  Chart penuh <span aria-hidden="true">↗</span>
+                </a>
+                <button class="hero-market-info" type="button" aria-label="Informasi data harga" aria-describedby="hero-market-tooltip" aria-expanded="false">
+                  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="7.25" />
+                    <path d="M10 9v4M10 6.5h.01" />
+                  </svg>
+                  <span class="hero-market-tooltip" id="hero-market-tooltip" role="tooltip">Harga XAUUSD disediakan oleh TradingView dan dapat tertunda sesuai penyedia data.</span>
+                </button>
+              </div>
             </header>
 
             <div class="hero-market-quote" role="region" aria-label="Harga XAUUSD dari TradingView">
@@ -274,15 +317,6 @@
               </div>
             </div>
 
-            <footer class="hero-market-foot">
-              <button class="hero-market-info" type="button" aria-label="Informasi data harga" aria-describedby="hero-market-tooltip" aria-expanded="false">
-                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                  <circle cx="10" cy="10" r="7.25" />
-                  <path d="M10 9v4M10 6.5h.01" />
-                </svg>
-                <span class="hero-market-tooltip" id="hero-market-tooltip" role="tooltip">Harga XAUUSD disediakan oleh TradingView dan dapat tertunda sesuai penyedia data.</span>
-              </button>
-            </footer>
           </section>
         </div>
       </div>
