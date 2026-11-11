@@ -13,13 +13,13 @@ window.ZIO_REGISTRY = {
     copyrightYear: '2026'
   },
 
-  /* Tautan kanal resmi (isi URL Facebook, Threads, YouTube, WhatsApp, & Marketplace saat sudah tersedia) */
+  /* Tautan kanal resmi dan kontak ZIOGOLD */
   links: {
     telegramGlobal: 'https://t.me/ziogoldmaker',
     tiktok: 'https://vt.tiktok.com/ZSHW8mbw73KdU-eOZhW/',
     instagram: 'https://www.instagram.com/ziogold_/',
-    facebook: '',
-    threads: '',
+    facebook: 'https://www.facebook.com/ziofxgolddd/',
+    threads: 'https://www.threads.com/@ziogold_',
     youtube: '',
     whatsapp: '',
     marketplaceCap: '',
