@@ -51,6 +51,21 @@
     @media (min-width: 640px) { .zio-container { padding-inline: 28px; } }
     @media (min-width: 1024px) { .zio-container { padding-inline: 32px; } }
 
+    @media (max-width: 639px) {
+      .hide-mobile,
+      .hidden-mobile {
+        display: none !important;
+      }
+    }
+    @media (min-width: 640px) {
+      .sm\:flex {
+        display: flex !important;
+      }
+      .sm\:block {
+        display: block !important;
+      }
+    }
+
     /* ==========================================================================
        LATAR BERGERAK: aurora emas, sapuan cahaya, grain, vignette
        Hanya memakai transform/opacity agar ringan di perangkat mobile.
