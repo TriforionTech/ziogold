@@ -882,28 +882,48 @@
       }
     }
 
+    .about-intro {
+      display: grid;
+      gap: 12px;
+      max-width: 760px;
+      margin-bottom: 36px;
+    }
+    .about-intro .eyebrow { margin-bottom: 0; }
+    .about-lead {
+      max-width: 68ch;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .about-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px 24px;
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+    .about-footer p span {
+      color: var(--gold-light);
+      font-weight: 600;
+    }
+    .about-footer a {
+      color: var(--gold-light);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    .about-footer a:hover { color: var(--text); }
+
     /* ==========================================================================
        HOME COMPACT INTERACTIVE LINE TIMELINE (2019 · 2026)
        GPU-composited transform/opacity motion aligned to Zio Gold obsidian-gold.
        ========================================================================== */
-    .tl-nav-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 34px;
-      height: 34px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, 0.03);
-      color: var(--text);
-      transition: border-color 180ms ease, color 180ms ease, background-color 180ms ease;
-    }
-    .tl-nav-btn:hover {
-      border-color: var(--border-gold);
-      color: var(--gold-light);
-      background: rgba(212, 175, 55, 0.08);
-    }
-
     .tl-rail-scroll {
       overflow-x: auto;
       overflow-y: hidden;
@@ -919,6 +939,12 @@
       }
     }
 
+    .tl-open .tl-rail-scroll {
+      overflow: visible;
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
+
     .tl-rail-grid {
       position: relative;
       display: grid;
@@ -926,6 +952,12 @@
       min-width: 860px;
       padding-inline: 14px;
       align-items: start;
+    }
+    .tl-open .tl-rail-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      min-width: 0;
+      padding-inline: 0;
+      gap: 8px;
     }
     .tl-axis {
       position: absolute;
@@ -936,6 +968,10 @@
       background: rgba(255, 255, 255, 0.09);
       border-radius: 999px;
       pointer-events: none;
+    }
+    .tl-open .tl-axis {
+      left: 12.5%;
+      right: 12.5%;
     }
     @media (min-width: 960px) {
       .tl-rail-grid {
@@ -980,8 +1016,8 @@
     }
 
     .tl-year {
-      font-size: 12px;
-      font-weight: 700;
+      font-size: 13px;
+      font-weight: 600;
       height: 22px;
       line-height: 22px;
       margin-bottom: 10px;
@@ -1013,15 +1049,14 @@
     }
 
     .tl-short {
-      margin-top: 11px;
-      font-size: 11px;
+      margin-top: 9px;
+      font-size: 12px;
       line-height: 1.25;
-      font-weight: 500;
-      white-space: nowrap;
+      font-weight: 400;
+      white-space: normal;
       color: rgba(169, 172, 164, 0.78);
       transition: color 200ms ease;
     }
-
     .tl-node:hover .tl-year,
     .tl-node.is-passed .tl-year {
       color: var(--text);
@@ -1055,21 +1090,31 @@
     }
 
     .tl-stage {
-      min-height: 80px;
+      min-height: 132px;
+      margin-top: 18px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
     }
-    .tl-editorial-head {
-      position: relative;
-      padding-left: 16px;
+    .tl-story-date {
+      margin-bottom: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+      font-variant-numeric: tabular-nums;
     }
-    .tl-editorial-head::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 2px;
-      bottom: 2px;
-      width: 2px;
-      border-radius: 999px;
-      background: linear-gradient(180deg, #F6E08F 0%, #D4AF37 55%, rgba(143, 117, 36, 0.18) 100%);
+    .tl-story-title {
+      margin-bottom: 8px;
+      color: var(--text);
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+    }
+    .tl-story-copy {
+      max-width: 72ch;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
     }
     .tl-panel[hidden] {
       display: none !important;
@@ -1088,6 +1133,15 @@
       .tl-dot { transition: none !important; }
       .tl-node.is-active .tl-dot::after,
       .tl-panel.is-active { animation: none !important; }
+    }
+    @media (max-width: 520px) {
+      .about-intro { margin-bottom: 28px; }
+      .about-lead { font-size: 14px; }
+      .tl-short { font-size: 10px; }
+      .tl-stage { min-height: 160px; }
+      .tl-story-title { font-size: 16px; }
+      .tl-story-copy { font-size: 13px; }
+      .about-footer { flex-direction: column; align-items: flex-start; }
     }
 
 /* Tailwind CSS v3.4.17 (Precompiled) */

@@ -423,19 +423,12 @@ document.addEventListener('DOMContentLoaded', () => {
   /* 14. Bagan Garis Waktu Interaktif & Motion (Beranda #tentang) */
   document.querySelectorAll('[data-zio-timeline]').forEach((tlRoot) => {
     const nodes = Array.from(tlRoot.querySelectorAll('[data-tl-node]'));
-    const panels = Array.from(tlRoot.querySelectorAll('[data-tl-panel]'));
+    const panels = Array.from(tlRoot.querySelectorAll('[data-tl-panel]')).slice(0, nodes.length);
     const fillEl = tlRoot.querySelector('[data-tl-fill]');
     const scrollEl = tlRoot.querySelector('[data-tl-scroll]');
-    const prevBtn = tlRoot.querySelector('[data-tl-prev]');
-    const nextBtn = tlRoot.querySelector('[data-tl-next]');
     if (!nodes.length || !panels.length) return;
 
     let activeIdx = 0;
-    let inView = false;
-    let pausedByUser = false;
-    let autoTimer = 0;
-    let hoverTimer = 0;
-    const finePointer = window.matchMedia('(pointer: fine)').matches;
 
     function setActive(nextIdx, opts) {
       const options = opts || {};
@@ -477,89 +470,28 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    function stopAuto() {
-      if (autoTimer) {
-        clearInterval(autoTimer);
-        autoTimer = 0;
-      }
-    }
-
-    function syncAuto() {
-      stopAuto();
-      if (!reduce && inView && !pausedByUser && document.visibilityState !== 'hidden') {
-        autoTimer = setInterval(() => {
-          setActive(activeIdx + 1);
-        }, 4600);
-      }
-    }
-
     nodes.forEach((btn, idx) => {
       btn.tabIndex = idx === 0 ? 0 : -1;
       btn.addEventListener('click', () => {
-        pausedByUser = true;
-        stopAuto();
         setActive(idx);
       });
-      if (finePointer) {
-        btn.addEventListener('mouseenter', () => {
-          clearTimeout(hoverTimer);
-          hoverTimer = setTimeout(() => setActive(idx), 95);
-        });
-        btn.addEventListener('mouseleave', () => clearTimeout(hoverTimer));
-      }
       btn.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowRight') {
           e.preventDefault();
-          pausedByUser = true;
-          stopAuto();
           setActive(activeIdx + 1, { focusNode: true });
         } else if (e.key === 'ArrowLeft') {
           e.preventDefault();
-          pausedByUser = true;
-          stopAuto();
           setActive(activeIdx - 1, { focusNode: true });
         } else if (e.key === 'Home') {
           e.preventDefault();
-          pausedByUser = true;
-          stopAuto();
           setActive(0, { focusNode: true });
         } else if (e.key === 'End') {
           e.preventDefault();
-          pausedByUser = true;
-          stopAuto();
           setActive(nodes.length - 1, { focusNode: true });
         }
       });
     });
 
-    if (prevBtn) {
-      prevBtn.addEventListener('click', () => {
-        pausedByUser = true;
-        stopAuto();
-        setActive(activeIdx - 1);
-      });
-    }
-    if (nextBtn) {
-      nextBtn.addEventListener('click', () => {
-        pausedByUser = true;
-        stopAuto();
-        setActive(activeIdx + 1);
-      });
-    }
-
-    tlRoot.addEventListener('mouseenter', () => { stopAuto(); });
-    tlRoot.addEventListener('mouseleave', () => { syncAuto(); });
-    tlRoot.addEventListener('focusin', () => { stopAuto(); });
-    tlRoot.addEventListener('focusout', () => { syncAuto(); });
-
-    if ('IntersectionObserver' in window) {
-      new IntersectionObserver((entries) => {
-        inView = entries.some((en) => en.isIntersecting);
-        syncAuto();
-      }, { threshold: 0.25 }).observe(tlRoot);
-    }
-
-    document.addEventListener('visibilitychange', syncAuto);
     setActive(0);
   });
 });
