@@ -1,0 +1,75 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "ZIOGOLD",
+    "identifier": "https://ziogold.com"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:ziogold.com:page:home",
+      "displayName": "Beranda ZIOGOLD",
+      "description": "Informasi utama tentang ZIOGOLD, analisis XAUUSD, komunitas, aktivitas, FAQ, dan kontak.",
+      "type": "text/html",
+      "url": "https://ziogold.com/",
+      "representativeQueries": [
+        "Apa itu ZIOGOLD?",
+        "Bagaimana cara bergabung dengan komunitas ZIOGOLD?",
+        "Bagaimana menghubungi ZIOGOLD?"
+      ]
+    },
+    {
+      "identifier": "urn:air:ziogold.com:page:about",
+      "displayName": "Tentang ZIOGOLD",
+      "description": "Profil dan perjalanan ZIOGOLD.",
+      "type": "text/html",
+      "url": "https://ziogold.com/about/",
+      "representativeQueries": [
+        "Bagaimana perjalanan ZIOGOLD?",
+        "Apa prinsip ZIOGOLD?"
+      ]
+    },
+    {
+      "identifier": "urn:air:ziogold.com:page:education",
+      "displayName": "Edukasi Trading",
+      "description": "Materi edukasi trading XAUUSD, analisis teknikal dan fundamental, dan glosarium istilah trading.",
+      "type": "text/html",
+      "url": "https://ziogold.com/education/",
+      "representativeQueries": [
+        "Materi edukasi trading apa yang tersedia?",
+        "Apa saja istilah penting dalam trading XAUUSD?"
+      ]
+    },
+    {
+      "identifier": "urn:air:ziogold.com:page:contact",
+      "displayName": "Kontak ZIOGOLD",
+      "description": "Kanal resmi, informasi keamanan, dan formulir untuk menghubungi ZIOGOLD.",
+      "type": "text/html",
+      "url": "https://ziogold.com/contact/",
+      "representativeQueries": [
+        "Bagaimana cara menghubungi ZIOGOLD?",
+        "Apa kanal resmi ZIOGOLD?"
+      ]
+    },
+    {
+      "identifier": "urn:air:ziogold.com:page:merchandise",
+      "displayName": "Merchandise ZIOGOLD",
+      "description": "Halaman merchandise resmi ZIOGOLD.",
+      "type": "text/html",
+      "url": "https://ziogold.com/merchandise/",
+      "representativeQueries": [
+        "Di mana informasi merchandise ZIOGOLD?"
+      ]
+    },
+    {
+      "identifier": "urn:air:ziogold.com:page:legal",
+      "displayName": "Kebijakan dan Pernyataan Risiko",
+      "description": "Kebijakan privasi, ketentuan penggunaan, dan pernyataan risiko trading.",
+      "type": "text/html",
+      "url": "https://ziogold.com/legal/",
+      "representativeQueries": [
+        "Apa risiko trading yang dijelaskan ZIOGOLD?",
+        "Di mana kebijakan privasi ZIOGOLD?"
+      ]
+    }
+  ]
+}

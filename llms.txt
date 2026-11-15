@@ -1,0 +1,19 @@
+# ZIOGOLD
+
+> Situs resmi ZIOGOLD: edukasi trading XAUUSD, analisis Metode H1, live trading, dan komunitas trader dengan prinsip Wait and See.
+
+## Halaman Utama
+
+- [Beranda](https://ziogold.com/): Ringkasan ZIOGOLD, aktivitas, komunitas, FAQ, dan kontak.
+- [Tentang ZIOGOLD](https://ziogold.com/about/): Profil dan perjalanan ZIOGOLD.
+- [Edukasi Trading](https://ziogold.com/education/): Materi dasar XAUUSD, analisis teknikal dan fundamental, serta glosarium trading.
+- [Komunitas](https://ziogold.com/#akses-komunitas): Informasi akses komunitas Global dan VIP.
+- [Kontak](https://ziogold.com/contact/): Kanal resmi dan formulir kontak.
+- [Merchandise](https://ziogold.com/merchandise/): Informasi halaman merchandise ZIOGOLD.
+- [Kebijakan dan Risiko](https://ziogold.com/legal/): Kebijakan privasi, ketentuan penggunaan, dan pernyataan risiko.
+
+## Informasi untuk Agen
+
+- Konten utama tersedia sebagai halaman HTML publik tanpa autentikasi.
+- Fokus situs adalah edukasi dan komunitas trading XAUUSD. Konten bukan jaminan hasil atau rekomendasi keuangan personal.
+- [Manifest ARD](https://ziogold.com/.well-known/ard.json): Daftar halaman publik ZIOGOLD untuk penemuan oleh agen.

@@ -159,7 +159,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const expanded = trigger.getAttribute('aria-expanded') === 'true';
       const panel = document.getElementById(trigger.getAttribute('aria-controls'));
       trigger.setAttribute('aria-expanded', String(!expanded));
-      if (panel) panel.setAttribute('aria-hidden', String(expanded));
+      if (panel) {
+        panel.setAttribute('aria-hidden', String(expanded));
+        panel.inert = expanded;
+      }
     });
   });
 
