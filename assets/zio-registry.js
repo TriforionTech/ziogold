@@ -21,7 +21,7 @@ window.ZIO_REGISTRY = {
     facebook: 'https://www.facebook.com/ziofxgolddd/',
     threads: 'https://www.threads.com/@ziogold_',
     youtube: '',
-    whatsapp: '',
+    whatsapp: 'https://wa.me/6285156778599',
     marketplaceCap: '',
     marketplaceTee: '',
     marketplaceHoodie: ''

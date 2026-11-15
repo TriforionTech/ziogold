@@ -913,7 +913,7 @@
           </div>
 
           <div class="lg:col-span-7 reveal" style="--d:120ms">
-            <form id="home-contact-form" data-zio-contact-form class="panel spot px-4 py-6 sm:p-8 space-y-5" data-spot novalidate>
+            <form id="home-contact-form" data-zio-contact-form class="panel spot px-4 py-6 sm:p-8 space-y-5" data-spot>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
         <div>
           <label for="home-contact-form-name" class="block text-xs font-semibold uppercase tracking-wider text-[color:var(--muted)] mb-2">Nama Lengkap</label>
@@ -922,9 +922,9 @@
                  class="zio-input" />
         </div>
         <div>
-          <label for="home-contact-form-contact" class="block text-xs font-semibold uppercase tracking-wider text-[color:var(--muted)] mb-2">Email atau Username Telegram</label>
-          <input id="home-contact-form-contact" name="contact" type="text" required
-                 placeholder="nama@email.com atau @username"
+          <label for="home-contact-form-contact" class="block text-xs font-semibold uppercase tracking-wider text-[color:var(--muted)] mb-2">Email</label>
+          <input id="home-contact-form-contact" name="contact" type="email" required autocomplete="email"
+                 placeholder="nama@email.com"
                  class="zio-input" />
         </div>
       </div>
@@ -959,14 +959,9 @@
 
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
         <button type="submit" class="btn btn-gold">
-          Hubungi Tim ZIOGOLD
+          Kirim via WhatsApp
           <svg class="w-4 h-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 15L15 5M7 5h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <a href="https://t.me/ziogoldmaker" target="_blank" rel="noopener noreferrer"
-           data-cta-link="telegram" data-cta-location="contact-direct"
-           class="text-xs sm:text-sm text-[color:var(--gold-light)] hover:text-white font-semibold underline underline-offset-4">
-          Atau buka Telegram Global ↗
-        </a>
       </div>
 
       <div data-form-status aria-live="polite"></div>
@@ -1096,6 +1091,6 @@
   </a>
 
   <script src="./assets/zio-registry.js?v=53"></script>
-  <script src="./assets/zio.js?v=52"></script>
+  <script src="./assets/zio.js?v=53"></script>
 </body>
 </html>

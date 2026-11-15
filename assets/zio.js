@@ -245,21 +245,33 @@ document.addEventListener('DOMContentLoaded', () => {
           }
           return;
         }
-        const tgUrl = (REG.links && REG.links.telegramGlobal) || 'https://t.me/ziogoldmaker';
         const waUrl = REG.links && REG.links.whatsapp ? REG.links.whatsapp.trim() : '';
-        if (statusEl) {
-          statusEl.className = 'mt-4 rounded-xl border border-[color:var(--border-gold)] bg-[rgba(16,19,15,0.92)] p-4 text-xs sm:text-sm space-y-2.5';
-          const summaryText = 'Kategori: ' + category + ' · Nama: ' + name + ' (' + contact + ')';
-          statusEl.innerHTML =
-            '<p class="font-semibold text-[color:var(--gold-light)]">Ringkasan pesan berhasil disiapkan</p>' +
-            '<p class="text-[color:var(--muted)]"></p>' +
-            '<p class="text-[color:var(--muted)] leading-relaxed">Demi menjaga keamanan komunikasi, lanjutkan pengiriman pesan Anda langsung melalui kanal resmi ZIOGOLD di bawah ini.</p>' +
-            '<div class="pt-1 flex flex-wrap items-center gap-3">' +
-              '<a href="' + tgUrl + '" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm">Hubungi via Telegram Global ↗</a>' +
-              (waUrl ? '<a href="' + waUrl + '" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">Hubungi via WhatsApp ↗</a>' : '') +
-            '</div>';
-          statusEl.querySelectorAll('p')[1].textContent = summaryText;
+        if (!waUrl) {
+          if (statusEl) {
+            statusEl.className = 'mt-4 text-xs sm:text-sm text-red-300';
+            statusEl.textContent = 'Tautan WhatsApp belum tersedia. Silakan hubungi ZIOGOLD melalui kanal resmi.';
+          }
+          return;
         }
+        const whatsappMessage = [
+          'Halo ZIOGOLD,',
+          '',
+          'Nama: ' + name,
+          'Kontak balasan: ' + contact,
+          'Kategori: ' + category,
+          '',
+          'Pesan:',
+          message
+        ].join('\n');
+        const whatsappLink = new URL(waUrl);
+        whatsappLink.searchParams.set('text', whatsappMessage);
+        const whatsappHref = whatsappLink.toString();
+        if (statusEl) {
+          statusEl.className = 'mt-4 rounded-lg border border-[color:var(--border-gold)] bg-[rgba(212,175,55,0.08)] px-4 py-3 text-xs sm:text-sm text-[color:var(--gold-light)]';
+          statusEl.innerHTML = 'Pesan sudah disiapkan. Periksa lalu tekan Kirim di WhatsApp. <a class="font-semibold underline underline-offset-4" target="_blank" rel="noopener noreferrer">Buka WhatsApp ↗</a>';
+          statusEl.querySelector('a').href = whatsappHref;
+        }
+        window.open(whatsappHref, '_blank', 'noopener,noreferrer');
       });
     });
   }
